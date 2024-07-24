@@ -1,0 +1,26 @@
+body{
+    background-color: #fff3b0;
+}
+
+.rounded-border {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 20px; /* Adjust the value to make the corners more or less rounded */
+}
+
+ul {
+    list-style-type: disc; /* Bullets */
+    padding-left: 20px;    /* Indent list */
+    margin: 0;             /* Remove default margin */
+}
+
+li {
+    margin-bottom: 5px;    /* Space between list items */
+}
+.first_line
+{
+font-family: 'Times New Roman';
+color: red; 
+}
