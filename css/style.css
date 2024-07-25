@@ -1,26 +1,78 @@
-body{
-    background-color: #fff3b0;
+body {
+    background-image: url('../background/website-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.rounded-border {
-    width: 200px;
-    height: 200px;
-    background-color: lightblue;
+.button-container{
+    border: 3px solid black;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+    padding: 10px; /* Optional: adds some space around the edges */
+}
+
+/*Home about us Contact us navigation*/
+.nav{
     border: 2px solid black;
-    border-radius: 20px; /* Adjust the value to make the corners more or less rounded */
+    padding: 1px;
+    text-align: center;
+    background-color: #e9d8a6;
 }
 
-ul {
-    list-style-type: disc; /* Bullets */
-    padding-left: 20px;    /* Indent list */
-    margin: 0;             /* Remove default margin */
+/*Specify the removal of underline from buttons in div: Home about us Contact us navigation*/
+.nav a {
+    text-decoration: none; /* Removes underline */
+    color: black;
+    margin-right: 1%;
+    line-height: 5%;
+    font-weight: bold;
+} 
+
+
+/* Sup-Lin is Signup and Login */
+.Sup-Lin{
+    border: 2px solid black;
+    padding: 1px; 
+    justify-content: center;
+    color: beige ; 
+    text-decoration: none;
+    margin-left: 10px;
 }
 
-li {
-    margin-bottom: 5px;    /* Space between list items */
+.first_line {
+    font-family: 'Times New Roman';
+    color: red; 
 }
-.first_line
-{
-font-family: 'Times New Roman';
-color: red; 
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer a {
+    color: #ffffff; /* White color for the links */
+    text-decoration: none; /* Removes underline */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }

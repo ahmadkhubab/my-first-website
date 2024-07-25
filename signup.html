@@ -18,35 +18,27 @@
         <!--Logo Image -->
         <img src="logo/logo.PNG" alt="Company Logo;"style="display: block;margin:auto;">
         
-        <!--Sign in & Sign up options-->
-        <div>
-            
-            <a href="signup.html">Sign Up</a>
-            <a href="signin.html">Sign In</a>
-
-        </div>
-
-        <div style="border: 2px solid black;padding: 1px;text-align: center;background-color: #e9d8a6;">
+        <div class="nav">
         
             <!--Home Icon source and link-->
             <img src="logo/home.png" alt="Home Button" style="vertical-align: middle;">
-            <a style="margin-right: 1%;" href="index.html">Home</a>
+            <a  href="index.html">Home</a>
         
             <!--About us Icon source and link-->
             <img src="logo/aboutus.png" alt="aboutus"  style="vertical-align: middle;width: 2.5%;">
-            <a style="margin-right: 1%;" href="aboutus.html">About Us</a>
+            <a  href="aboutus.html">About Us</a>
         
             <!--Contact Us source and link-->
             <img src="logo/contactus.png" alt="contactus"  style="vertical-align: middle;width: 2.5%;">
-            <a style="margin-right: 1%;" href="contactus.html">Contact Us</a>
+            <a  href="contactus.html">Contact Us</a>
             
         </div>
 
          <!--Sign up greeting Message-->
-         <div style="border: 2px solid black;padding: 1px; text-align: center;background-color: #e9d8a6;">  
+         <div style="text-align: center;">  
                 <h1>Welcome to sign Up page!</h1>
     
-            <form action="/Sign Up!" method="post" onsubmit="return validateForm() && spec_check()">
+            <form action="/Sign Up!" method="post">
                  <div>
                     <!--Name-->
                     <p>
@@ -60,7 +52,7 @@
             
                         <label style="padding-right: 68px;" for="email">Email Adress:</label>
             
-                        <input type="email" id="email" email="email">
+                        <input type="email" id="email" name="email">
             
                     </p>
 
@@ -103,21 +95,30 @@
                     
                     <br><br>
                     
+                   
+
                     <input  type="Submit" value="Sign Up!">
                  </div>
 
+                    <!--Check for if the name and email is filled when submit button press-->
+
+                <div id="form-check" style="color: rgb(206, 2, 2);"></div>
+
                   <!-- Error message display -->
-                    <div id="error-message" style="color: red;"></div>
+                <div id="error-message" style="color: red;"></div>
                     
                   <!-- Password Check -->
-                  <div id="spec-check" style="color: rgb(214, 4, 4);"></div> 
+                <div id="spec-check" style="color: rgb(214, 4, 4);"></div> 
                 
                 </form>
                 </div>
 
-        <footer>
-
-        </footer>
+                <footer class="footer">
+                    <div class="footer-content">
+                        <p>&copy; 2024 My First Website. All rights reserved.</p>
+                        <a href="contactus.html">Contact Us</a>
+                    </div>
+                </footer>
     
     
     

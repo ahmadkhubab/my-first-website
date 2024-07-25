@@ -4,12 +4,20 @@
 
     <head>
         <!--css link, title plus logo-->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="/css/style.css">
         <link rel="icon" href="logo/logo.ico" type="image/x-icon">
         <title>
             My First Website
         </title>
-       
+        
+        <!--Sign in & Sign up options-->
+        <div class="button-container" >
+
+            <a class="Sup-Lin"  href="login.html">Log In</a>
+            <a class="Sup-Lin" href="signup.html">Sign Up</a>
+
+        </div>
+    
     </head>
 
     <body>
@@ -17,28 +25,22 @@
         <!--Logo Image -->
         <img src="logo/logo.PNG" alt="Company Logo;"style="display: block;margin:auto;">
         
-        <!--Sign in & Sign up options-->
-        <div>
-
-            <a href="signup.html">Sign Up</a>
-            <a href="signin.html">Sign In</a>
-
-        </div>
+        
 
         <!--Border,-->
-        <div style="border: 2px solid black;padding: 1px;text-align: center;background-color: #e9d8a6;">
+        <div class="nav">
         
             <!--Home Icon source and link-->
             <img src="logo/home.png" alt="Home Button" style="vertical-align: middle;">
-            <a style="margin-right: 1%;" href="index.html">Home</a>
+            <a  href="index.html">Home</a>
         
             <!--About us Icon source and link-->
             <img src="logo/aboutus.png" alt="aboutus"  style="vertical-align: middle;width: 2.5%;">
-            <a style="margin-right: 1%;" href="aboutus.html">About Us</a>
+            <a  href="aboutus.html">About Us</a>
         
             <!--Contact Us source and link-->
             <img src="logo/contactus.png" alt="contactus"  style="vertical-align: middle;width: 2.5%;">
-            <a style="margin-right: 1%;" href="contactus.html">Contact Us</a>
+            <a  href="contactus.html">Contact Us</a>
             
         </div>
 
@@ -58,8 +60,11 @@
         </div>
         
         
-        <footer>
-
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 My First Website. All rights reserved.</p>
+                <a href="contactus.html">Contact Us</a>
+            </div>
         </footer>
     
     

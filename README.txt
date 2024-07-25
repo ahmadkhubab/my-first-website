@@ -58,7 +58,7 @@ The JavaScript file includes:
 How to Use
 
 1. Clone the repository:
-   git clone https://github.com/yourusername/my-first-website.git
+   git clone https://github.com/ahmadkhubab/my-first-website.git
 
 2. Navigate to the project directory:
    cd my-first-website
