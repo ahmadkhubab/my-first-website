@@ -1,129 +1,90 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <!-- CSS link, title, and logo -->
+    <script src="js/pass_validate.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="logo/logo.ico" type="image/x-icon">
+    <title>Sign Up - My First Website</title>
+</head>
+<body>
+    <!-- Logo Image -->
+    <img src="logo/logo.PNG" alt="Company Logo" style="display: block; margin: auto;">
+    
+    <div class="nav">
+        <!-- Home Icon source and link -->
+        <img src="logo/home.png" alt="Home Button" style="vertical-align: middle;">
+        <a href="index.html">Home</a>
 
+        <!-- About Us Icon source and link -->
+        <img src="logo/aboutus.png" alt="About Us" style="vertical-align: middle; width: 2.5%;">
+        <a href="aboutus.html">About Us</a>
 
-    <head>
-        <!--css link, title plus logo-->
-        <script src="js/pass_validate.js" defer></script>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="logo/logo.ico" type="image/x-icon">
-        <title>
-            Sign Up - My First Website
-        </title>
-       
-    </head>
+        <!-- Contact Us Icon source and link -->
+        <img src="logo/contactus.png" alt="Contact Us" style="vertical-align: middle; width: 2.5%;">
+        <a href="contactus.html">Contact Us</a>
+    </div>
 
-    <body>
-        
-        <!--Logo Image -->
-        <img src="logo/logo.PNG" alt="Company Logo;"style="display: block;margin:auto;">
-        
-        <div class="nav">
-        
-            <!--Home Icon source and link-->
-            <img src="logo/home.png" alt="Home Button" style="vertical-align: middle;">
-            <a  href="index.html">Home</a>
-        
-            <!--About us Icon source and link-->
-            <img src="logo/aboutus.png" alt="aboutus"  style="vertical-align: middle;width: 2.5%;">
-            <a  href="aboutus.html">About Us</a>
-        
-            <!--Contact Us source and link-->
-            <img src="logo/contactus.png" alt="contactus"  style="vertical-align: middle;width: 2.5%;">
-            <a  href="contactus.html">Contact Us</a>
+    <!-- Sign up greeting Message -->
+    <div style="text-align: center;">  
+        <h1>Welcome to the Sign Up page!</h1>
+
+        <form action="/Sign Up!" method="post" onsubmit="return validateForm()">
+            <div>
+                <!-- Name -->
+                <p>
+                    <label style="padding-right: 115px;" for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </p>
+
+                <!-- Email -->
+                <p>
+                    <label style="padding-right: 68px;" for="email">Email Address:</label>
+                    <input type="email" id="email" name="email">
+                </p>
+
+                <!-- Password -->
+                <p>
+                    <label style="padding-right: 18px;" for="password">Enter New Password:</label>
+                    <input type="password" id="password" name="password">
+                </p>
+
+                <ul style="list-style-type: disc; padding: 2px; text-align: center;">
+                    <li>Should be one Upper Case</li>
+                    <li style="padding-left: 6.1%;">Should Use special Characters i.e @!#$</li>
+                </ul>
+
+                <!-- Confirm Password -->
+                <p>
+                    <label style="padding-right: 2px;" for="confirm_password">Confirm New Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password">
+                </p>
+
+                <!-- Gender Selection -->
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+
+                <br><br>
+
+                <input type="submit" value="Sign Up!">
+            </div>
+
+            <!-- Error message display -->
+            <div id="error-message" style="color: red;"></div>
             
+            <!-- Password Check -->
+            <div id="spec-check" style="color: rgb(214, 4, 4);"></div> 
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 My First Website. All rights reserved.</p>
+            <a href="contactus.html">Contact Us</a>
         </div>
-
-         <!--Sign up greeting Message-->
-         <div style="text-align: center;">  
-                <h1>Welcome to sign Up page!</h1>
-    
-            <form action="/Sign Up!" method="post">
-                 <div>
-                    <!--Name-->
-                    <p>
-                        <label style="padding-right: 115px;" for="name">Name:</label>
-                        <input type="text" id="name" name="name">
-                    </p>
-            
-                    <!--Email-->
-        
-                    <p>
-            
-                        <label style="padding-right: 68px;" for="email">Email Adress:</label>
-            
-                        <input type="email" id="email" name="email">
-            
-                    </p>
-
-
-            
-                    <!--password-->
-                    
-                    <p>
-                        <label style="padding-right: 18px;" for="password">Enter New Password:</label>
-                        <input type="password" id="password" name="Password">
-                       
-                    </p>
-
-                        <ul style="list-style-type: disc; padding: 2px; text-align: center;">
-                            <li>Should be one Upper Case</li>
-                            <li style="padding-left: 6.1%;">Should Use special Characters i.e @!#$</li>
-                        </ul>
-                        
-                        
-                    
-                    
-
-                     <!--Confirm Password-->
-
-                    <p>
-            
-                        <label style="padding-right: 2px;" for="confirm_password">Confirm New Password:</label>
-            
-                        <input type="password" id="confirm_password" name="confirm_password">
-            
-                    </p>
-                    
-                    <!--Gender Selection-->
-                    
-                    <label>Gender:</label>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label>
-                    
-                    <br><br>
-                    
-                   
-
-                    <input  type="Submit" value="Sign Up!">
-                 </div>
-
-                    <!--Check for if the name and email is filled when submit button press-->
-
-                <div id="form-check" style="color: rgb(206, 2, 2);"></div>
-
-                  <!-- Error message display -->
-                <div id="error-message" style="color: red;"></div>
-                    
-                  <!-- Password Check -->
-                <div id="spec-check" style="color: rgb(214, 4, 4);"></div> 
-                
-                </form>
-                </div>
-
-                <footer class="footer">
-                    <div class="footer-content">
-                        <p>&copy; 2024 My First Website. All rights reserved.</p>
-                        <a href="contactus.html">Contact Us</a>
-                    </div>
-                </footer>
-    
-    
-    
-    </body>
-
-
-
+    </footer>
+</body>
 </html>
